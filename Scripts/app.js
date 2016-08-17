@@ -1,3 +1,9 @@
+/* author: Tarun Rana
+  Student id : 300871205
+  Date : 17th august 2016
+  Program : java script
+  */
+
 var core;
 (function (core) {
     "use strict";
