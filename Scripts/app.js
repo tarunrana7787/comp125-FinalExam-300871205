@@ -1,7 +1,7 @@
 /* author: Tarun Rana
   Student id : 300871205
   Date : 17th august 2016
-  Program : java script
+  Program : roll button
   */
 
 var core;
@@ -11,7 +11,12 @@ var core;
     var stage;
     var rollButton;
     var blank;
-    var die1;
+    var Dice1;
+    var Dice2;
+    var Dice3;
+    var Dice4;
+    var Dice5;
+    var Dice6;
     // app entry function
     function init() {
         canvas = document.getElementById("canvas");
@@ -24,13 +29,13 @@ var core;
     function gameLoop() {
         stage.update();
     }
-      function rollButton_clicked() {
-        die1 = Math.floor((Math.random() * 6) + 1);
+      function rollButton_click() {
+        dice1 = Math.floor((Math.random() * 6) + 1);
         console.log(die1);
-
+      }
     function main() {
         //roll button
-        rollButton = new createjs.Bitmap("Assets/images/rollButton.png");
+       var rollButton = new createjs.Bitmap("Assets/images/rollButton.png");
         rollButton.x = 350;
         rollButton.y = 220;
         stage.addChild(rollButton);
@@ -43,7 +48,6 @@ var core;
         var Dice4 = new createjs.Bitmap("../Assets/images/4.png");
         var Dice5 = new createjs.Bitmap("../Assets/images/5.png");
         var Dice6 = new createjs.Bitmap("../Assets/images/6.png");
-        var rollButton = new createjs.Bitmap("../Assets/images/rollButton.png");
         var Buttonhelper = new createjs.ButtonHelper(rollButton,"normal","hover","clicked");
         rollButton.addEventListener('clicked', roll);
     window.addEventListener("load", init);
