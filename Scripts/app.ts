@@ -29,6 +29,7 @@ module core {
 
     function main(): void {
         
+        
     }
 
     window.addEventListener("load", init);

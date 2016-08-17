@@ -22,6 +22,11 @@ var core;
         stage.update();
     }
     function main() {
+        //roll button
+        rollButton = new createjs.Bitmap("Assets/images/rollButton.png");
+        rollButton.x = 350;
+        rollButton.y = 220;
+        stage.addChild(rollButton);
     }
     window.addEventListener("load", init);
 })(core || (core = {}));
